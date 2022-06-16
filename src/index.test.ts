@@ -19,3 +19,8 @@ test('should use second mask', () => {
 	const result = mask('1234', ['9.9.9', '99-99'])
 	expect(result).toEqual('12-34')
 })
+
+test('should use first mask when not have all size', () => {
+	const result = mask('12', ['9.9.9', '99-99'])
+	expect(result).toEqual('1.2')
+})
