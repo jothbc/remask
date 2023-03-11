@@ -7,12 +7,12 @@
 ## Install
 
 ```
-yarn add vanilla-masker remask
+yarn add remask
 ```
 
 ## Usage
 
-```js
+```ts
 import { mask } from 'remask'
 
 const value = 'ABC1C83'
@@ -24,10 +24,10 @@ mask(value, pattern)
 
 Pattern can be a pattern array, so remask choose one pattern based on pattern/value length match
 
-```js
+```ts
 const patterns = ['999.999.999-99', '99.999.999/9999-99']
 
-mask('12345678901', patterns) // gets firts pattern (999.999.999-99)
+mask('12345678901', patterns) // gets first pattern (999.999.999-99)
 // 123.456.789-01
 
 mask('12345678000106', patterns) // gets second pattern (99.999.999/9999-99)

@@ -9,6 +9,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"test": "jest",
+		"test:watch": "jest --watch",
 		"lint": "prettier \"src/**/*.{js,jsx,ts,tsx}\" --write",
 		"dev": "microbundle watch --target browser --name remask",
 		"build": "microbundle build --target browser --name remask & tsc",
@@ -50,16 +51,18 @@
 		"@babel/preset-env": "^7.7.4",
 		"@commitlint/cli": "^8.2.0",
 		"@commitlint/config-conventional": "^8.2.0",
+		"@types/jest": "^28.1.1",
 		"@types/vanilla-masker": "^1.2.1",
 		"babel": "^6.23.0",
 		"babel-cli": "^6.26.0",
 		"babel-jest": "^24.9.0",
 		"husky": "^3.1.0",
-		"jest": "^24.9.0",
+		"jest": "^28.1.1",
 		"lint-staged": "^9.5.0",
 		"microbundle": "^0.11.0",
 		"prettier": "^1.19.1",
 		"standard-version": "^7.0.1",
+		"ts-jest": "^28.0.5",
 		"typescript": "^4.7.3"
 	},
 	"dependencies": {
